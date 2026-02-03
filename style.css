@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #0b1a0b, #1aff1a);
+  min-height: 100vh;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 9PX;
+}
+
+.search button {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 9PX;
+}
+
+/* LINE FILTER */
+.line-filter {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.7),
+    transparent
+  );
+  margin: 20px 0;
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  gap: 50px;
+  animation: fade 1s ease;
+}
+
+.left-box {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 5px 90px;
+  max-width: 460px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  line-height: 1.6;
+}
+
+.right-box {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.right-box img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  padding: 15px;
+  text-align: center;
+  background: #00cc00;
+  color: black;
+  font-weight: bold;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+p{
+    font-size: 21px;
+}
+
+
+
